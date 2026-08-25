@@ -5,7 +5,7 @@
 `define AXI_LITE_PKG_V
 
 // bus widths
-`define ADDR_W   16
+`define ADDR_W   32
 `define DATA_W   32
 `define STRB_W   (`DATA_W/8)
 `define PROT_W   3

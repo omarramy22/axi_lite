@@ -32,9 +32,9 @@ module handshake_check #(
                     $error("[%0t] %0s: data changed while valid was pending", $time, NAME);
             end
 
-            if (^valid === 1'bx)
+            if (valid === 1'bx)
                 $error("[%0t] %0s: valid is X", $time, NAME);
-            if (^ready === 1'bx)
+            if (ready === 1'bx)
                 $error("[%0t] %0s: ready is X", $time, NAME);
 
             if (valid && !ready) begin

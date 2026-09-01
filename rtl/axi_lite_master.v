@@ -40,7 +40,7 @@ module axi_lite_master #(
     reg [2:0] state;
     reg [ADDR_W-1:0] addr_latch;
     reg [DATA_W-1:0] wdata_latch;
-    reg aw_sent, w_sent; // did this channel's handshake already complete
+    reg aw_sent, w_sent; 
 
     wire aw_done = aw_sent || (awvalid && awready);
     wire w_done  = w_sent  || (wvalid  && wready);

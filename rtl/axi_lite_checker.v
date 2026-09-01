@@ -1,5 +1,3 @@
-// axi_lite_checker.v
-// watches an AXI-Lite bus and flags protocol violations, doesn't drive anything. 
 `include "axi_lite_pkg.v"
 
 // one of these per channel (aw, w, b, ar, r)
